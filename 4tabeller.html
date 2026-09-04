@@ -8,22 +8,73 @@
 <body>
     <h2>Handlevogn</h2>
     <table>
-        <tr> <!--Her lager vi overskriftene i tabellen, horisontale rader-->
-            <th>Produkt</th>
-            <th>Pris</th>
-            <th>Antall</th>
-        </tr>
+        <thead>
+            <tr> <!--Her lager vi overskriftene i tabellen, horisontale rader-->
+                <th>Produkt</th>
+                <th>Pris</th>
+                <th>Antall</th>
+            </tr>
+        </thead>
 
-        <tr> <!--Her fyller vi ut cellene-->
-            <td>Playstation 5 Pro</td>
-            <td>699,-</td>
-            <td>2</td>
-        </tr>
-        <tr> <!--Denne tabellen gir en ekstra rad vertikalt-->
-            <td>Call of Duty: Black Ops 6</td>
-            <td>899,-</td>
-            <td>1</td>
-        </tr>
+        <tbody>
+            <tr> <!--Her fyller vi ut cellene-->
+                <td>Playstation 5 Pro</td>
+                <td>10 500,-</td>
+                <td>2</td>
+            </tr>
+            <tr> <!--Denne tabellen gir en ekstra rad vertikalt-->
+                <td>Call of Duty: Black Ops 6</td>
+                <td>899,-</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Spider-man 2</td>
+                <td>699,-</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>Total</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Her lager vi en mer semantisk liste med head, body og foot-->
+    <h2>Filmer</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Navn</th>
+                <th>Utgivelsesår</th>
+                <th>Hvor kan den strømmes?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--a for attributt, href for at linken skal fungere-->
+                <td><a href="https://www.imdb.com/title/tt0094721/">Beetlejuice</a></td>
+                <td>1988</td>
+                <td>HBO</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.imdb.com/title/tt0241527/?ref_=nv_sr_srsg_3_tt_7_nm_0_in_1_q_harry%20potter%20">Harry Potter and the Philosophers Stone</a></td>
+                <td>2001</td>
+                <td>HBO</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.imdb.com/title/tt0082198/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_conan%20the%20bar">Conan the Barbardian</a></td>
+                <td>1982</td>
+                <td>Netflix</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
