@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidemal</title>
+</head>
+<body>
+
+    <!--Header med navigasjon til de ulike sidene-->
+    <header>
+        <img src="verdens-kuleste-logo">
+        MinLogo
+        <nav>
+                <button type="button" onclick="window.location.href='index.html';">Hjem</button>
+                <button type="button" onclick="window.location.href='ovelse.html';">Labøvelser</button>
+                <button type="button" onclick="window.location.href='#myFooter';">Kontakt oss</button>
+                <button type="button" onclick="window.location.href='mal.html';">Mal</button>
+        </nav>
+    </header>
+
+    <!--Hoveddel av siden-->
+    <main>
+        <h1>Dette handler siden om</h1>
+        <article>
+            <header>
+                <h2>Dette handler artikkelen om.</h2>
+            </header>
+        </article>
+
+            <!--Seksjon for <aside>-tag-->
+            <aside>
+                <section>
+                    <p>
+                        <a href="https://animaapp.com/blog/code/what-is-semantic-html-key-differences-from-html-and-why-its-important-for-frontend-developers/">What is Semantic HTML?</a>
+                    </p>
+                    <p>
+                        <a href="https://css-tricks.com/explaining-the-accessible-benefits-of-using-semantic-html-elements/">Explaining the Accessible Benefits of Using Semantic HTML</a>
+                    </p>
+                    <p>
+                        <a href="https://www.seoforgooglenews.com/p/why-semantic-html-matters-for-seo">Why Semantic HTML Still Matters for SEO and AI</a>
+                    </p>
+                    <p>
+                        <a href="https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters/">Why Semantic HTML still matters</a>
+                    </p>
+                    <p>
+                        <a href="https://www.telerik.com/blogs/why-semantic-html-matters-introductory-guide-new-developers">Semantic HTML: An introductory guide</a>
+                    </p>
+                    <p>
+                        <a href="https://lmgtfy.com/?q=html-5">HTML-5!</a>
+                    </p>
+                </section>
+            </aside>
+    </main>
+
+</body>
+
+<!--Footer med kontaktinfo og kontaktskjema-->
+<footer id="myFooter">
+    <ul>
+        <li>Mathias Skjerdal</li>
+        <li>navn@domene.hiof</li>
+    </ul>
+    <label for="name">Navn</label><br>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="subject">Emne</label><br>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="email">E-post</label><br>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Melding</label>
+    <br>
+    <input type="text" id="message" name="message" required>
+
+</footer>
+</html>
