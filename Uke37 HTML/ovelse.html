@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Labøvelser</title>
 </head>
 <body>
     
 </body>
 
 <!--Import av mal fra mal.html-->
+<script>
+    const fs = require(fs');
+    
+    let html = fs.readFileSync('mal.html', 'utf-8');
 
+    html = html.replace('{{ovelse}}', 'mal')
+</script>
 </html>
