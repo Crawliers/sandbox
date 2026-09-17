@@ -1,10 +1,12 @@
 /*Stylesheet for visuelle-regler.html*/
 
-/**/
+/*Ved å legge opacity utenfor fargen reduserte det synligheten på hele boksen.
+Synligheten ble redusert da skriften ble mer utydelig.*/
 body {
     font-family: 'Gill Sans', Arial, sans-serif;
 
     .boks1 {
+        opacity: 0.5;
         background-color: cadetblue;
         font-size: 1.5rem;
     }
