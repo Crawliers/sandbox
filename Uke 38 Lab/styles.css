@@ -2,6 +2,8 @@
 
 /*Ved å legge opacity utenfor fargen reduserte det synligheten på hele boksen.
 Synligheten ble redusert da skriften ble mer utydelig.*/
+
+/*RGB fargekoding tillater direkte endring av opacity i teksten i stedet for selve boksen.*/
 body {
     font-family: 'Gill Sans', Arial, sans-serif;
 
@@ -9,15 +11,23 @@ body {
         opacity: 0.5;
         background-color: cadetblue;
         font-size: 1.5rem;
+        text-transform: uppercase;
     }
 
     .boks2 {
         background-color: #FF5733;
+        line-height: 1.6;
 
     }
 
     .boks3 {
         background-color: rgb(255, 0, 34);
+        background-image: url("https://picsum.photos/400/200");
+        background-size: contain;
+        /*De ulike stilene beskriver hvordan bildet skal presenteres. Cover strekker det og viser det zoomet inn.
+        Contain begrenser størrelsen på bildet slik at det skal vises i sin helhet, og produserer derfor mange små kopier.*/
+        text-decoration: none;
+        
 
     }
 
@@ -25,5 +35,6 @@ body {
         color: hsl(11, 100%, 60%);
         font-size: 32px;
         font-weight: bold;
+        text-align: center;
     }
 }
