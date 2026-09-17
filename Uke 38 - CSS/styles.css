@@ -1,0 +1,63 @@
+/*Slik kan vi legge kommentarer i CSS*/
+
+/*Globale stilregler */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222835;
+
+}
+
+/* Header og navigasjon */
+
+header {
+    background-color: #1e3a5f;
+    padding: 1rem 2rem;
+    /*rem = relativ størrelse basert på font-størelsen vår (font str. 16 gjør at 1rem = 16px)*/
+    /*padding kan ha 4 arguments, lese med klokken, når det kun er 2 argumenter speiles de med den motsatte siden (top+bunn, hørye+venstre)*/
+    color: #ffffff;
+
+    span { /*Kan nestes inn i header*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover { /*Bestemmer hva som skjer på mouseover*/
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header span { /*Først inn i header, deretter finne span. Påvirker ikke "span" utenfor header.*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*Hovedinnhold*/
+
+main {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 1.5rem;
+}
