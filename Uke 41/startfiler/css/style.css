@@ -225,3 +225,28 @@ h2 {
 #some i {
     font-size: 40px;
 }
+
+
+@media screen and (min-width: 680px) {
+   body {
+      header {
+         
+         nav {
+            ul {
+               float: right;
+               display: flex;
+            }   
+         }
+         }
+      header section {
+         background: #efefef;
+      }
+      main {
+         display: inline-flex;
+         flex-direction:row;    
+         align-content: space-evenly;
+         justify-content: center;
+         max-width: 1fr;
+      }
+   }
+}

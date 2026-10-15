@@ -40,3 +40,17 @@ body {
 #food {
 	background-color: hsl(30, 52%, 72%);
 }
+
+#grid-container {
+	display: grid;
+	grid-template-columns: 0.5fr, 3fr, 0.5fr;
+	header {
+		grid-column: 1 / 4; grid-row: 1 / 2;
+	}
+	main {
+		grid-column: 2 / 3; grid-row: 2 / 3;
+	}
+	footer {
+		grid-column: 1 / 4; grid-row: 4 / 4;
+	}
+}
